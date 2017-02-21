@@ -14,6 +14,8 @@
 		14796A581C1CD9B500169D09 /* UICv1KeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACDC27E1A931BCE00C7A63A /* UICv1KeyChainStore.m */; };
 		14796A631C1CD9C900169D09 /* UICKeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A59CD71A62D4C3006561CC /* UICKeyChainStore.m */; };
 		65C106FE1D5A636C005137AD /* libUICKeyChainStore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14796A691C1CD9C900169D09 /* libUICKeyChainStore.a */; };
+		88499D7F1E59EA61000C4801 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88499D7E1E59EA61000C4801 /* Security.framework */; };
+		88499D801E59EA89000C4801 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88499D7E1E59EA61000C4801 /* Security.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,7 @@
 		3ACDC27D1A931BCE00C7A63A /* UICv1KeyChainStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICv1KeyChainStore.h; sourceTree = "<group>"; };
 		3ACDC27E1A931BCE00C7A63A /* UICv1KeyChainStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICv1KeyChainStore.m; sourceTree = "<group>"; };
 		3ACDC2881A931CE900C7A63A /* UICKeyChainStoreForwardCompatibilityTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICKeyChainStoreForwardCompatibilityTests.m; sourceTree = "<group>"; };
+		88499D7E1E59EA61000C4801 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88499D7F1E59EA61000C4801 /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88499D801E59EA89000C4801 /* Security.framework in Frameworks */,
 				65C106FE1D5A636C005137AD /* libUICKeyChainStore.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -104,6 +109,7 @@
 				14A59CAC1A62CF6E006561CC /* UICKeyChainStoreTests */,
 				143BF28D1C1CD57C002BE6B3 /* Configurations */,
 				14A59C9E1A62CF6E006561CC /* Products */,
+				88499D7D1E59EA61000C4801 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -161,6 +167,14 @@
 				3ACDC27E1A931BCE00C7A63A /* UICv1KeyChainStore.m */,
 			);
 			path = "v1.1.1-Lib";
+			sourceTree = "<group>";
+		};
+		88499D7D1E59EA61000C4801 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88499D7E1E59EA61000C4801 /* Security.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
