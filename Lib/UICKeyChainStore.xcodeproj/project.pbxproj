@@ -316,7 +316,7 @@
 			};
 			buildConfigurationList = 14A59C971A62CF6E006561CC /* Build configuration list for PBXProject "UICKeyChainStore" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
