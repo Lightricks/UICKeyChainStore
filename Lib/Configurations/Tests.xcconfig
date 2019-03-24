@@ -6,9 +6,9 @@ INFOPLIST_FILE = UICKeyChainStoreTests/Info.plist;
 PRODUCT_BUNDLE_IDENTIFIER = com.kishikawakatsumi.$(PRODUCT_NAME:rfc1034identifier);
 PRODUCT_NAME = $(TARGET_NAME);
 
-TEST_HOST[sdk=iphone*] = $(BUILT_PRODUCTS_DIR)/TestHost.app/TestHost;
-TEST_HOST[sdk=appletv*] = $(BUILT_PRODUCTS_DIR)/TestHost.app/TestHost;
-TEST_HOST[sdk=macosx*] = $(BUILT_PRODUCTS_DIR)/TestHost.app/Contents/MacOS/TestHost;
+TEST_HOST[sdk=iphone*] = $(BUILT_PRODUCTS_DIR)/UICTestHost.app/UICTestHost;
+TEST_HOST[sdk=appletv*] = $(BUILT_PRODUCTS_DIR)/UICTestHost.app/UICTestHost;
+TEST_HOST[sdk=macosx*] = $(BUILT_PRODUCTS_DIR)/UICTestHost.app/Contents/MacOS/UICTestHost;
 
 LD_RUNPATH_SEARCH_PATHS[sdk=macosx*] = $(inherited) @executable_path/../Frameworks @loader_path/../Frameworks;
 LD_RUNPATH_SEARCH_PATHS[sdk=iphone*] = $(inherited) @executable_path/Frameworks @loader_path/Frameworks;
