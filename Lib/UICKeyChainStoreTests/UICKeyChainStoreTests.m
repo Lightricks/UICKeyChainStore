@@ -1380,7 +1380,8 @@
 {
     UICKeyChainStore *store = [UICKeyChainStore keyChainStoreWithService:@"Twitter"];
     
-    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:@[@"Keychain"]];
+    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:@[@"Keychain"]
+                                         requiringSecureCoding:YES error:nil];
     [store setData:data forKey:@"data" label:@"Label" comment:@"Comment"];
     XCTAssertEqualObjects(data, [store dataForKey:@"data"]);
 }
@@ -1453,7 +1454,8 @@
 {
     UICKeyChainStore *store = [UICKeyChainStore keyChainStoreWithService:@"Twitter"];
     
-    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:@[@"Keychain"]];
+    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:@[@"Keychain"]
+                                         requiringSecureCoding:YES error:nil];
     
     [store setData:data forKey:@"data"];
     
@@ -1591,10 +1593,7 @@
     
     keychain.accessibility = UICKeyChainStoreAccessibilityAfterFirstUnlock;
     XCTAssertEqualObjects([keychain accessibilityObject], (__bridge id)kSecAttrAccessibleAfterFirstUnlock);
-    
-    keychain.accessibility = UICKeyChainStoreAccessibilityAlways;
-    XCTAssertEqualObjects([keychain accessibilityObject], (__bridge id)kSecAttrAccessibleAlways);
-    
+
 #if TARGET_OS_IPHONE
     keychain.accessibility = UICKeyChainStoreAccessibilityWhenPasscodeSetThisDeviceOnly;
     XCTAssertEqualObjects([keychain accessibilityObject], (__bridge id)kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly);
@@ -1605,9 +1604,6 @@
     
     keychain.accessibility = UICKeyChainStoreAccessibilityAfterFirstUnlockThisDeviceOnly;
     XCTAssertEqualObjects([keychain accessibilityObject], (__bridge id)kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly);
-    
-    keychain.accessibility = UICKeyChainStoreAccessibilityAlwaysThisDeviceOnly;
-    XCTAssertEqualObjects([keychain accessibilityObject], (__bridge id)kSecAttrAccessibleAlwaysThisDeviceOnly);
 }
 
 @end
