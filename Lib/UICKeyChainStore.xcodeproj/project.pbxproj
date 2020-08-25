@@ -13,10 +13,10 @@
 		14796A571C1CD9B500169D09 /* UICKeyChainStoreForwardCompatibilityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACDC2881A931CE900C7A63A /* UICKeyChainStoreForwardCompatibilityTests.m */; };
 		14796A581C1CD9B500169D09 /* UICv1KeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ACDC27E1A931BCE00C7A63A /* UICv1KeyChainStore.m */; };
 		14796A631C1CD9C900169D09 /* UICKeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 14A59CD71A62D4C3006561CC /* UICKeyChainStore.m */; };
-		88499D7F1E59EA61000C4801 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88499D7E1E59EA61000C4801 /* Security.framework */; };
-		88499D801E59EA89000C4801 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88499D7E1E59EA61000C4801 /* Security.framework */; };
 		148993CA1D8F24DB000132F7 /* UICKeyChainStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14796A501C1CD9A500169D09 /* UICKeyChainStore.framework */; };
 		148993D31D8F2515000132F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 148993D21D8F2515000132F7 /* main.m */; };
+		88499D7F1E59EA61000C4801 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88499D7E1E59EA61000C4801 /* Security.framework */; };
+		88499D801E59EA89000C4801 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88499D7E1E59EA61000C4801 /* Security.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -437,7 +437,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 14796A791C1CDB8A00169D09 /* libUICKeyChainStore.xcconfig */;
 			buildSettings = {
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 			};
 			name = Debug;
 		};
@@ -445,7 +444,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 14796A791C1CDB8A00169D09 /* libUICKeyChainStore.xcconfig */;
 			buildSettings = {
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 			};
 			name = Release;
 		};
